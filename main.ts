@@ -10,35 +10,12 @@ function Start () {
         `)
 }
 input.onButtonPressed(Button.A, function () {
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        # # # # #
-        . . . . .
-        . . . . .
-        `)
-    basic.pause(1000)
-    Ljud += 1
-    basic.showLeds(`
-        . . . . #
-        . . . # .
-        # . # . .
-        . # . . .
-        . . . . .
-        `)
-    for (let index = 0; index < 200; index++) {
-        music.playTone(262, music.beat(BeatFraction.Quarter))
-    }
-    Ljud += -1
-    basic.showLeds(`
-        # . . . #
-        . # . # .
-        . . # . .
-        . # . # .
-        # . . . #
-        `)
+    Red_light_Green_light()
 })
 input.onButtonPressed(Button.B, function () {
+    Red_light_Green_light()
+})
+function Red_light_Green_light () {
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -46,7 +23,7 @@ input.onButtonPressed(Button.B, function () {
         . . . . .
         . . . . .
         `)
-    basic.pause(1000)
+    basic.pause(2000)
     Ljud += 1
     basic.showLeds(`
         . . . . #
@@ -55,9 +32,17 @@ input.onButtonPressed(Button.B, function () {
         . # . . .
         . . . . .
         `)
-    for (let index = 0; index < 200; index++) {
-        music.playTone(262, music.beat(BeatFraction.Quarter))
+    for (let index = 0; index < 150; index++) {
+        music.playTone(262, music.beat(BeatFraction.Half))
     }
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        # # # # #
+        . . . . .
+        . . . . .
+        `)
+    basic.pause(2000)
     Ljud += -1
     basic.showLeds(`
         # . . . #
@@ -66,9 +51,11 @@ input.onButtonPressed(Button.B, function () {
         . # . # .
         # . . . #
         `)
-})
+}
 let Ljud = 0
 Start()
-while (0 == Ljud) {
-    music.playMelody("- - - C - - - - ", 650)
-}
+basic.forever(function () {
+    while (0 == Ljud) {
+        music.playMelody("- - - C - - - - ", 650)
+    }
+})
