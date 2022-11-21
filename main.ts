@@ -35,6 +35,7 @@ function Red_light_Green_light () {
     for (let index = 0; index < 150; index++) {
         music.playTone(262, music.beat(BeatFraction.Half))
     }
+    Ljud += -1
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -43,7 +44,6 @@ function Red_light_Green_light () {
         . . . . .
         `)
     basic.pause(2000)
-    Ljud += -1
     basic.showLeds(`
         # . . . #
         . # . # .

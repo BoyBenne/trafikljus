@@ -16,13 +16,13 @@
         # . # . . 
         . # . . . 
         . . . . .
-        `</field><next><block type="controls_repeat_ext" id="nmqf?;DoDDt6.K0Q:F4="><value name="TIMES"><shadow type="math_whole_number" id="Ff3wQk{+-A|(dgwbGwbK"><field name="NUM">150</field></shadow></value><statement name="DO"><block type="device_play_note" id="MY,K{eNa:Xys0=Q?K6Qe"><value name="note"><shadow type="device_note" id="!CQE-zle,#uym)XO8ngV"><field name="note">262</field></shadow></value><value name="duration"><shadow type="device_beat" id="cr^7ek9a*ORU=jxr6:+;"><field name="fraction">BeatFraction.Half</field></shadow></value></block></statement><next><block type="device_show_leds" id="+)Y^BQ5NB#:5sS[,V}HJ"><field name="LEDS">`
+        `</field><next><block type="controls_repeat_ext" id="nmqf?;DoDDt6.K0Q:F4="><value name="TIMES"><shadow type="math_whole_number" id="Ff3wQk{+-A|(dgwbGwbK"><field name="NUM">150</field></shadow></value><statement name="DO"><block type="device_play_note" id="MY,K{eNa:Xys0=Q?K6Qe"><value name="note"><shadow type="device_note" id="!CQE-zle,#uym)XO8ngV"><field name="note">262</field></shadow></value><value name="duration"><shadow type="device_beat" id="cr^7ek9a*ORU=jxr6:+;"><field name="fraction">BeatFraction.Half</field></shadow></value></block></statement><next><block type="variables_change" id="8)mWx`mRfLiB*$?vKo}m"><field name="VAR" id="L}N@Nt09|ovT$=@_ul.C">Ljud</field><value name="VALUE"><shadow type="math_number" id="$9}4W`)XCVvJeiqsw!R-"><field name="NUM">-1</field></shadow></value><next><block type="device_show_leds" id="+)Y^BQ5NB#:5sS[,V}HJ"><field name="LEDS">`
         . . . . . 
         . . . . . 
         # # # # # 
         . . . . . 
         . . . . .
-        `</field><next><block type="device_pause" id="F__-e7{lub1Il,UuDFy3"><value name="pause"><shadow type="timePicker" id="Je=9J^8Hq9J|[j!$=b6r"><field name="ms">2000</field></shadow></value><next><block type="variables_change" id="8)mWx`mRfLiB*$?vKo}m"><field name="VAR" id="L}N@Nt09|ovT$=@_ul.C">Ljud</field><value name="VALUE"><shadow type="math_number" id="$9}4W`)XCVvJeiqsw!R-"><field name="NUM">-1</field></shadow></value><next><block type="device_show_leds" id="hk7!OOUbINBVP{3pVZDy"><field name="LEDS">`
+        `</field><next><block type="device_pause" id="F__-e7{lub1Il,UuDFy3"><value name="pause"><shadow type="timePicker" id="Je=9J^8Hq9J|[j!$=b6r"><field name="ms">2000</field></shadow></value><next><block type="device_show_leds" id="hk7!OOUbINBVP{3pVZDy"><field name="LEDS">`
         # . . . # 
         . # . # . 
         . . # . . 
